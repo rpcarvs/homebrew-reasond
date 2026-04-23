@@ -2,27 +2,27 @@ class Reasond < Formula
   desc "Local-first reasoning audit viewer for coding-agent sessions"
   homepage "https://github.com/rpcarvs/reasond"
   license "MIT"
-  version "0.1.2"
+  version "0.1.3"
 
   depends_on "jq"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rpcarvs/reasond/releases/download/v0.1.2/reasond_0.1.2_darwin_arm64.tar.gz"
-      sha256 "0a5fe7b338b093f0e20aae0c9eadd07e7267264b357f6b233b2fa21c24bf31de"
+      url "https://github.com/rpcarvs/reasond/releases/download/v0.1.3/reasond_0.1.3_darwin_arm64.tar.gz"
+      sha256 "4b97ab0591e49259d91af6c78142c23c95dcacc863a4035df0523d2e31f02cad"
     else
-      url "https://github.com/rpcarvs/reasond/releases/download/v0.1.2/reasond_0.1.2_darwin_amd64.tar.gz"
-      sha256 "b38adff866a57407bd634c7c94bb692e134fd33080a97ed37ed413657f2a8984"
+      url "https://github.com/rpcarvs/reasond/releases/download/v0.1.3/reasond_0.1.3_darwin_amd64.tar.gz"
+      sha256 "194d4658b9976d1e9e615a2a46e29adb796a44a404389897419e4fa9b6f372f8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/rpcarvs/reasond/releases/download/v0.1.2/reasond_0.1.2_linux_arm64.tar.gz"
-      sha256 "553e5d7107c787dd373b637d86222ae61f2192453070f6e277a110b80aae1030"
+      url "https://github.com/rpcarvs/reasond/releases/download/v0.1.3/reasond_0.1.3_linux_arm64.tar.gz"
+      sha256 "18eaf09d7abc70473eba1bdd527c0efceea4a23c86aa7b9fd4fcf1ce4f455246"
     else
-      url "https://github.com/rpcarvs/reasond/releases/download/v0.1.2/reasond_0.1.2_linux_amd64.tar.gz"
-      sha256 "dc537311a5985cabb347aee9e2aed884adc21a80d4cbd6a4720d4ff1be981d71"
+      url "https://github.com/rpcarvs/reasond/releases/download/v0.1.3/reasond_0.1.3_linux_amd64.tar.gz"
+      sha256 "84e4acbba95bba923ba4911f30c59da54868bb123ff7b95933c2ececd62c1c26"
     end
   end
 
