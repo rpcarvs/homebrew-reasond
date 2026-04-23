@@ -4,26 +4,25 @@ class Reasond < Formula
   license "MIT"
   version "0.1.2"
 
-  depends_on "git"
   depends_on "jq"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/rpcarvs/reasond/releases/download/v0.1.2/reasond_0.1.2_darwin_arm64.tar.gz"
-      sha256 "815dd6f9d7731df8158ca9ab76402f70999def3a5518561cb3171d1e8b0da793"
+      sha256 "0a5fe7b338b093f0e20aae0c9eadd07e7267264b357f6b233b2fa21c24bf31de"
     else
       url "https://github.com/rpcarvs/reasond/releases/download/v0.1.2/reasond_0.1.2_darwin_amd64.tar.gz"
-      sha256 "78b6274411a7351d0c20d85f1fb95e4cd2ad6a2db3f989bf439f0d18a7c4d18e"
+      sha256 "b38adff866a57407bd634c7c94bb692e134fd33080a97ed37ed413657f2a8984"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/rpcarvs/reasond/releases/download/v0.1.2/reasond_0.1.2_linux_arm64.tar.gz"
-      sha256 "f375536aeca81e6b37619416a3ba1c3c486ccf57b3a3681b5d5dfca49ad5a49c"
+      sha256 "553e5d7107c787dd373b637d86222ae61f2192453070f6e277a110b80aae1030"
     else
       url "https://github.com/rpcarvs/reasond/releases/download/v0.1.2/reasond_0.1.2_linux_amd64.tar.gz"
-      sha256 "e1c692abfb8f3a21d25808de80c409a056adfc6842aa66689bcba966fc8f283a"
+      sha256 "dc537311a5985cabb347aee9e2aed884adc21a80d4cbd6a4720d4ff1be981d71"
     end
   end
 
